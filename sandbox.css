@@ -1,10 +1,20 @@
-body { font-size: 10pt; }
+body
+{
+	font-size: 10pt;
+	font-family: Helvetica;
+}
+h1,h2,h3,h4,h5,h6 { font-size: 1em; }
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.4em; }
+
 
 table
 {
 	border: 1px solid #aaa;
 	border-spacing: 0;
 	border-collapse: collapse;
+	margin-bottom: 3em;
+	font-size: 0.9em;
 }
 caption
 {
@@ -28,4 +38,13 @@ pre
 	border: 1px dotted #aaa;
 	background: #fbfbf5;
 	color: #444;
+	padding: 0.5em;
+}
+form, div#html_source, div#web_output
+{
+	float: left;
+}
+div#html_source, div#web_output
+{
+	margin-left: 2em;
 }

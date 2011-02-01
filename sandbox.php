@@ -72,8 +72,6 @@ foreach ( explode("\n", $git_latest_commit) as $line )
 	<td><?php echo implode('<br />', $notes); ?></td>
 </tr>
 </table>
-<pre>
-</pre>
 <form method="post">
 <div id="form_content">
 <h2>Input</h2>
@@ -81,16 +79,17 @@ foreach ( explode("\n", $git_latest_commit) as $line )
 <input type="submit" value="Textile this &rarr;" />
 </div>
 </form>
-<div id="result">
 <?php if ( $rendered ) : ?>
+<div id="html_source">
+<h2>HTML source</h2>
+<pre><code><?php echo htmlspecialchars($rendered); ?>
+</code></pre>
+</div>
+<div id="web_output">
 <h2>Web output</h2>
 <?php echo $rendered; ?>
-<h2>HTML source</h2>
-<pre><code>
-<?php echo htmlspecialchars($rendered); ?>
-</code></pre>
-<?php endif; ?>
 </div>
+<?php endif; ?>
 </div>
 </body>
 </html>
