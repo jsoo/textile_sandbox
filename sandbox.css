@@ -1,0 +1,31 @@
+body { font-size: 10pt; }
+
+table
+{
+	border: 1px solid #aaa;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+caption
+{
+	font-weight: bold;
+	text-align: left;
+	padding: 0 0 0.3em 1em;
+	border: solid #ccc;
+	border-width: 1px 1px 0 1px;
+	font-style: oblique;
+}
+
+th, td
+{
+	border: 1px solid #ccc;
+	padding: 0.3em;
+}
+caption, th { background: #eed; }
+th { text-align: right; }
+pre
+{
+	border: 1px dotted #aaa;
+	background: #fbfbf5;
+	color: #444;
+}

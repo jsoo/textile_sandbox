@@ -44,6 +44,7 @@ foreach ( explode("\n", $git_latest_commit) as $line )
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>Textile Sandbox</title>
+	<link type="text/css" rel="stylesheet" href="sandbox.css" />
 </head>
 <body>
 <div id="content">
